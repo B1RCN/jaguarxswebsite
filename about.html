@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0EC2QLLXKJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0EC2QLLXKJ');
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Gavilya - About</title>
+</head>
+
+<body style="background-color: rgb(0, 0, 20); font-family: 'Montserrat', sans-serif;" class="m-8">
+    <header class="text-white flex flex-row space-x-4 inline-block items-center">
+        <a href="#">
+            <h1 class="text-5xl font-bold mr-8">Gavilya</h1>
+        </a>
+        <ul class="flex flex-row space-x-4 font-semibold invisible sm:visible inline-block">
+            <li><a href="index">Home</a></li>
+            <li><a href="index#download">Download</a></li>
+            <li><a href="#" class="font-bold bg-gradient-to-r from-purple-600 to-purple-700 rounded-xl px-5 py-3">About</a></li>
+        </ul>
+    </header>
+
+    <div id="content" class="text-white text-center m-10 items-center h-96">
+        <h1 class="text-3xl font-bold">Gavilya</h1>
+        <p>Gavilya is a simple game launcher created by <a href="https://www.leocorp.fr/">Léo Corporation</a>. It's goal
+            is to unite all your games on your computer in the same place. </p>
+    </div>
+
+    <footer class="text-white grid grid-cols-2">
+        <div>
+            <h3 class="font-bold text-2xl">Links</h3>
+            <ul>
+                <li><a class="hover:underline" href="https://www.leocorp.fr/">Website</a></li>
+                <li><a class="hover:underline" href="https://twitter.com/LeoCorpNews">Twitter</a></li>
+                <li><a class="hover:underline" href="https://leopeyronnetcorp.blogspot.com/">Blog</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-bold text-2xl">Copyright</h3>
+            <p id="copyright-p"></p>
+            <script src="scripts/copyright.js"></script>
+        </div>
+
+    </footer>
+</body>
+
+</html>
